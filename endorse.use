@@ -1,0 +1,4 @@
+Name: endorse
+Description: convenience stuff that's missing from the ooc SDK - ooc's ActiveSupport, if you will.
+SourcePath: source
+
