@@ -1,4 +1,4 @@
-## to endorse > to support actively
+## endorse is ActiveSupport for ooc
 
 `endorse` brings a few extensions to ooc that makes it nicer
 to use in day-to-day work.
