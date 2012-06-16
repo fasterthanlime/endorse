@@ -1,4 +1,4 @@
-import structs/[ArrayList, HashMap]
+import structs/[ArrayList, List, HashMap]
 
 Tuple: class <K, V> {
     key: K
@@ -19,5 +19,16 @@ map: func <K, V> (first: Tuple<K, V>, args: ...) -> HashMap<K, V> {
         map put (t key, t value)
     )
     map
+}
+
+list: func <T> (first: T, args: ...) -> List<T> {
+    list := ArrayList<T> new(args count + 1)
+    list add(first)
+    iter := args iterator()
+    while (iter hasNext?()) {
+        nextType := iter getNextType()
+        list add(iter next(T))
+    }
+    list
 }
 
